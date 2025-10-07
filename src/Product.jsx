@@ -6,7 +6,7 @@ const Product = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    let isMounted = true; // ✅ prevent state update if component unmounted
+    let isMounted = true; 
 
     const fetchData = async () => {
       try {
@@ -25,7 +25,7 @@ const Product = () => {
 
     fetchData();
 
-    return () => { isMounted = false } // cleanup
+    return () => { isMounted = false }
   }, []);
 
   return (
