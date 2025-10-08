@@ -231,3 +231,323 @@ body {
     width: 100%;
   }
 }
+
+/* ========== GLOBAL RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* ========== SIGNUP PAGE BACKGROUND ========== */
+.signup-page {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(-45deg, #ff512f, #dd2476, #7b4397, #dc2430);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Gradient animation */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Floating glowing circles */
+.signup-page::before, .signup-page::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  filter: blur(60px);
+  animation: floatAnim 6s ease-in-out infinite alternate;
+}
+
+.signup-page::before {
+  width: 200px;
+  height: 200px;
+  top: 20%;
+  left: 15%;
+}
+
+.signup-page::after {
+  width: 250px;
+  height: 250px;
+  bottom: 15%;
+  right: 15%;
+}
+
+@keyframes floatAnim {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+
+/* ========== CARD DESIGN ========== */
+.signup-card {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  padding: 45px 40px;
+  border-radius: 25px;
+  width: 360px;
+  text-align: center;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+  transform: translateY(30px);
+  opacity: 0;
+  animation: slideUp 1s ease forwards;
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ========== TITLE & SUBTEXT ========== */
+.signup-title {
+  color: #fff;
+  font-size: 1.9rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.signup-sub {
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
+
+/* ========== INPUTS ========== */
+.signup-card input {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.signup-card input:focus {
+  background: #fff;
+  box-shadow: 0 0 8px rgba(221, 36, 118, 0.6);
+  transform: scale(1.02);
+}
+
+/* ========== BUTTON ========== */
+.signup-card button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  margin-top: 15px;
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 15px rgba(221, 36, 118, 0.4);
+}
+
+.signup-card button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(221, 36, 118, 0.6);
+}
+
+/* ========== FOOTER TEXT ========== */
+.signup-footer {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.signup-footer span {
+  color: #ffeb3b;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup-footer span:hover {
+  text-decoration: underline;
+}
+
+
+/* ========== GLOBAL RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* ========== LOGIN PAGE BACKGROUND ========== */
+.auth-page {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(-45deg, #00c6ff, #0072ff, #24c6dc, #514a9d);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Gradient animation */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Floating glowing circles */
+.auth-page::before, .auth-page::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  filter: blur(60px);
+  animation: floatAnim 6s ease-in-out infinite alternate;
+}
+
+.auth-page::before {
+  width: 220px;
+  height: 220px;
+  top: 18%;
+  left: 15%;
+}
+
+.auth-page::after {
+  width: 270px;
+  height: 270px;
+  bottom: 15%;
+  right: 10%;
+}
+
+@keyframes floatAnim {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-25px); }
+}
+
+/* ========== CARD DESIGN ========== */
+.auth-card {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
+  padding: 45px 40px;
+  border-radius: 25px;
+  width: 360px;
+  text-align: center;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+  transform: translateY(30px);
+  opacity: 0;
+  animation: slideUp 1s ease forwards;
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ========== TITLE & SUBTEXT ========== */
+.auth-title {
+  color: #fff;
+  font-size: 1.9rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.auth-sub {
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
+
+/* ========== INPUTS ========== */
+.auth-card input {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.auth-card input:focus {
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0, 114, 255, 0.6);
+  transform: scale(1.02);
+}
+
+/* ========== BUTTON ========== */
+.auth-card button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  margin-top: 15px;
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 15px rgba(0, 114, 255, 0.4);
+}
+
+.auth-card button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 114, 255, 0.6);
+}
+
+/* ========== FOOTER TEXT ========== */
+.auth-footer {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.auth-footer span {
+  color: #ffeb3b;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-footer span:hover {
+  text-decoration: underline;
+}
+
