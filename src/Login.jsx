@@ -46,10 +46,10 @@ const Login = () => {
 
         <button onClick={handleLogin}>Log In</button>
 
-        <p className="auth-footer">
+        {/* <p className="auth-footer">
           Don’t have an account?{" "}
           <span onClick={() => navigate('/signup')}>Sign Up</span>
-        </p>
+        </p> */}
       </div>
     </div>
   )
